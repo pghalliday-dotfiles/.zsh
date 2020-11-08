@@ -1,0 +1,2 @@
+. $HOME/.zsh/config.zsh
+
