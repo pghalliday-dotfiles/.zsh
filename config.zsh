@@ -120,6 +120,19 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# add ~/.local/bin to PATH
+PATH=$HOME/.local/bin:$PATH
+
+# Enable pyenv shims and autocompletion
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# Enable sdkman
+if [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
+  source "$HOME/.sdkman/bin/sdkman-init.sh"
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
