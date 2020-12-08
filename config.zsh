@@ -90,6 +90,7 @@ plugins=(
   iterm2
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
